@@ -63,3 +63,44 @@ python3 train.py
 该数据集下最佳参数为
 - dropout:0.45
 - k:0.5
+
+
+# 推荐阅读（ME）
+
+主线推荐
+- [x] [gensim 使用方法](https://blog.csdn.net/u014595019/article/details/52218249)
+- [ ] [gensim - num_topics](https://blog.csdn.net/questionfish/article/details/46742403)
+- [ ] [gensim - Similarity Queries](https://blog.csdn.net/questionfish/article/details/46746947)
+- [ ] [使用预训练的 word embedding](https://blog.csdn.net/weixin_42101286/article/details/90296819)
+- [ ] [LSTM 代码](https://blog.csdn.net/Wzz_Liu/article/details/85038746)
+
+支线推荐
+- [x] [batch_size](https://blog.csdn.net/qq_34886403/article/details/82558399)
+- [x] [epoch](http://www.360doc.com/content/18/0417/18/47852988_746429309.shtml)
+- [x] [checkpoint](https://www.jianshu.com/p/adfa8aa2cbdf)
+- [ ] [jieba 分词使用方法](https://blog.csdn.net/laobai1015/article/details/80420016)
+- [ ] [Latent Semantic Indexing](https://www.jianshu.com/p/28f2bc62a75b)
+- [x] ["//" 地板除](https://blog.csdn.net/qq_29566629/article/details/95374971)
+- [ ] [python yield](https://blog.csdn.net/mieleizhi0522/article/details/82142856/)
+- [ ] [tf.ConfigProto 和 tf.GPUOptions 用法总结](https://blog.csdn.net/lty_sky/article/details/91491302)
+- [x] [有关 global_step](https://blog.csdn.net/leviopku/article/details/78508951)
+- [x] [tf.nn.embedding_lookup()](https://blog.csdn.net/laolu1573/article/details/77170407)
+- [ ] [tf.reduce_sum()](https://www.jianshu.com/p/30b40b504bae)
+- [ ] [tf.nn.max_pool](https://blog.csdn.net/mao_xiao_feng/article/details/53453926)
+- [ ] [Hinge Loss](https://blog.csdn.net/ZJRN1027/article/details/80170966)
+- [ ] [tf.summary](https://www.cnblogs.com/lyc-seu/p/8647792.html)
+- [x] [tf.flags](https://blog.csdn.net/weixin_33896726/article/details/90134617)
+
+
+> p.s. 主线必读，支线随意
+
+# 说明（Me）
+此文件夹下的内容是我在跑了 [DouYishun/KB-QA](https://github.com/DouYishun/KB-QA) 模型然后通读下所有代码的产物，保留了终端输出记录文件 `no0221.txt`、程序模型（res）以及生成的summary(貌似文件太大 >100MB GitHub 无法上传)，这个是在服务器 GPU 上完整跑完了的，另外一个 `0214-no.log` 是在自己电脑上跑生成的记录文件（由于内存不够只跑了一部分）。另外，`KB-QA-master.zip` 是我把向量文件及所有程序打包，解压后放在 D 盘，环境配好后，直接 `python train.py` 即可运行。
+
+TensorBoard 是一个将 summary 可视化的工具，可以用来展示网络图、loss 变化、张量等，参见下图，[使用参考](https://blog.csdn.net/duanlianvip/article/details/98498826)。
+
+![](https://github.com/Yudreamy/KB-QA/blob/master/picture/1.PNG)
+
+![](https://github.com/Yudreamy/KB-QA/blob/master/picture/2.PNG)
+
+![](https://github.com/Yudreamy/KB-QA/blob/master/summary/file.PNG)
